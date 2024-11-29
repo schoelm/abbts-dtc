@@ -11,16 +11,24 @@ import kotlin.random.nextInt
 
 fun main() {
 
+    var name = "init"
+
+    fun askName(){
+        println("Gebe deinen Namen ein:")
+        name = readln()
+    }
+
+    askName()
+
     val dice = Random
 
     val playerScore = dice.nextInt(1..6)
     val computerScore = dice.nextInt(1..6)
 
-    // Todo: Den Spieler nach dem Namen fragen
     // Todo: Solange spielen bis Spieler abbricht
     // Todo: Ausgeben, wer mehr Runden gewonnen hat
 
-    println("Du würfelst: $playerScore  --  Computer würfelt: $computerScore")
+    println("$name würfelt: $playerScore  --  Computer würfelt: $computerScore")
     when {
         playerScore > computerScore -> println("Du gewinnst")
         playerScore < computerScore -> println("Der Computer gewinnt")

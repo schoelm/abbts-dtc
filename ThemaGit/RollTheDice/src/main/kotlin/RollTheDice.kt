@@ -10,10 +10,10 @@ import kotlin.random.Random
 
 fun main() {
 
-    val die = Random
+    val dice = Random
 
-    val playerScore = die.nextInt(7)
-    val computerScore = die.nextInt(7)
+    val playerScore = dice.nextInt(7)
+    val computerScore = dice.nextInt(7)
 
     // Todo: Den Fehler im Programm finden und beheben
     // Todo: Den Spieler nach dem Namen fragen
